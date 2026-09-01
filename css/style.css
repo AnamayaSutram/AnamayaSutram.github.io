@@ -286,6 +286,12 @@ body {
   padding: 80px 24px;
 }
 
+@media (max-width: 768px) {
+  .hero-wrapper {
+    background-position: left center;
+  }
+}
+
 /* Upper Left Corner Logo Overlay (Matching Screenshots 2 & 3) */
 .hero-logo-overlay {
   position: absolute;
