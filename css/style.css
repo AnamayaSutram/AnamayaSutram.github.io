@@ -333,10 +333,14 @@ body {
 
 /* What is Anamaya Sutram Section */
 .section-what-is {
-  padding: 80px 0;
+  padding: 40px 24px;
   background-color: var(--color-ivory);
   text-align: center;
   border-bottom: 1px solid rgba(184, 142, 75, 0.15);
+}
+
+.section-what-is .container {
+  max-width: 800px;
 }
 
 .gold-section-title {
@@ -344,7 +348,7 @@ body {
   font-size: 3rem;
   color: var(--color-gold);
   font-weight: 500;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .geometry-quote {
@@ -353,7 +357,7 @@ body {
   color: var(--color-indigo);
   line-height: 1.25;
   max-width: 760px;
-  margin: 0 auto 12px auto;
+  margin: 0 auto 8px auto;
   font-weight: 600;
 }
 
@@ -368,12 +372,24 @@ body {
 }
 
 .science-desc {
-  font-size: 1.15rem;
+  font-size: 0.98rem;
   color: rgba(43, 43, 43, 0.85);
   max-width: 680px;
-  margin: 0 auto 24px auto;
-  line-height: 1.65;
+  margin: 0 auto;
+  line-height: 1.6;
   padding: 0 16px;
+  text-align: left;
+}
+
+.science-desc ol {
+  display: inline-block;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.science-desc li {
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 /* Meet Anaya & Prof. Dev Section (Placed Right Above FAQs) */
