@@ -349,7 +349,7 @@ body {
 
 .geometry-quote {
   font-family: var(--font-heading);
-  font-size: 2.6rem;
+  font-size: 1.6rem;
   color: var(--color-indigo);
   line-height: 1.25;
   max-width: 760px;
