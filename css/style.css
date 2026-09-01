@@ -371,8 +371,9 @@ body {
   font-size: 1.15rem;
   color: rgba(43, 43, 43, 0.85);
   max-width: 680px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 24px auto;
   line-height: 1.65;
+  padding: 0 16px;
 }
 
 /* Meet Anaya & Prof. Dev Section (Placed Right Above FAQs) */
@@ -433,9 +434,21 @@ body {
 /* Guided Programs Grid */
 .programs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .program-card {
