@@ -288,7 +288,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-wrapper {
-    background-position: left center;
+    background-position: right center;
   }
 }
 
