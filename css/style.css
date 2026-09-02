@@ -65,7 +65,7 @@ body {
 }
 
 .section-padding {
-  padding: 88px 0;
+  padding: 60px 0;
 }
 
 .text-center {
@@ -378,7 +378,8 @@ body {
   font-size: 3rem;
   color: var(--color-gold);
   font-weight: 500;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .geometry-quote {
