@@ -13,12 +13,15 @@
   --color-teal: #008C8C;
   --color-teal-dark: #006E6E;
   --color-card: #FFFFFF;
-  --color-charcoal: #2B2B2B;
-  --color-muted: #666666;
+  --color-charcoal: #2c0101c0;
+  --color-muted: #382e2e;
+  --color-midnight: #1A1A3E;
+  --color-bottle-green: #183b03;
+  --color-light-pink: #d35c7e;
 
   --font-script: 'Dancing Script', cursive;
   --font-comic: 'Comic Neue', 'Comiccrazy', cursive, sans-serif;
-  --font-brand: 'Cinzel', 'Cormorant Garamond', serif;
+  --font-brand: 'Cormorant Garamond', serif;
   --font-heading: 'Cormorant Garamond', serif;
   --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
 
@@ -45,7 +48,7 @@ html {
 
 body {
   background-color: var(--color-ivory);
-  color: var(--color-charcoal);
+  color: var(--color-midnight);
   font-family: var(--font-body);
   line-height: 1.65;
   overflow-x: hidden;
@@ -159,21 +162,22 @@ body {
 .nav-brand-title {
   font-family: var(--font-brand);
   font-size: 1.85rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-gold);
   line-height: 1.1;
   letter-spacing: 0.5px;
 }
 
+
 .nav-brand-tagline {
   font-family: var(--font-body);
   font-size: 0.72rem;
   letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--color-purple);
+  text-transform: lowercase;
+  color: var(--color-light-pink);
   font-weight: 700;
   margin-top: 2px;
-  border-bottom: 2px solid var(--color-purple);
+  border-bottom: 2px solid var(--color-light-pink);
   padding-bottom: 2px;
   width: 100%;
 }
@@ -324,7 +328,7 @@ body {
   font-family: var(--font-script);
   font-size: 4.2rem;
   font-weight: 700;
-  color: #1F1938;
+  color: var(--color-bottle-green);
   line-height: 1.15;
   margin-bottom: 18px;
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
@@ -336,7 +340,7 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #1F1938;
+  color: var(--color-bottle-green);
   margin-bottom: 32px;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
@@ -385,7 +389,7 @@ body {
 .geometry-quote {
   font-family: var(--font-heading);
   font-size: 1.6rem;
-  color: var(--color-indigo);
+  color: var(--color-midnight);
   line-height: 1.25;
   max-width: 760px;
   margin: 0 auto 8px auto;
@@ -404,7 +408,7 @@ body {
 
 .science-desc {
   font-size: 0.98rem;
-  color: rgba(43, 43, 43, 0.85);
+  color: var(--color-midnight);
   max-width: 680px;
   margin: 0 auto;
   line-height: 1.6;
@@ -544,7 +548,7 @@ body {
 
 .program-desc {
   font-size: 0.95rem;
-  color: rgba(43, 43, 43, 0.8);
+  color: var(--color-midnight);
   margin-bottom: 20px;
   line-height: 1.6;
 }
@@ -559,7 +563,7 @@ body {
 
 .program-highlights li {
   font-size: 0.9rem;
-  color: rgba(43, 43, 43, 0.9);
+  color: var(--color-midnight);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -617,13 +621,13 @@ body {
 .feature-title {
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  color: var(--color-purple);
+  color: var(--color-midnight);
   margin-bottom: 10px;
 }
 
 .feature-desc {
   font-size: 0.92rem;
-  color: rgba(43, 43, 43, 0.75);
+  color: var(--color-midnight);
 }
 
 /* Upcoming Batch Section */
@@ -696,7 +700,7 @@ body {
 .quote-text {
   font-size: 1.1rem;
   font-style: italic;
-  color: rgba(43, 43, 43, 0.85);
+  color: var(--color-midnight);
   margin: 20px 0;
   line-height: 1.7;
 }
@@ -775,7 +779,7 @@ body {
 .accordion-body {
   padding: 0 28px 24px 28px;
   font-size: 0.98rem;
-  color: rgba(43, 43, 43, 0.8);
+  color: var(--color-midnight);
   display: none;
   line-height: 1.65;
 }
