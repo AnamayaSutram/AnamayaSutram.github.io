@@ -72,6 +72,10 @@ body {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -343,9 +347,29 @@ body {
   background-color: var(--color-ivory);
   text-align: center;
   border-bottom: 1px solid rgba(184, 142, 75, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-what-is::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/watermark.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .section-what-is .container {
+  position: relative;
+  z-index: 1;
   max-width: 800px;
 }
 
