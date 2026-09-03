@@ -15,9 +15,10 @@
   --color-card: #FFFFFF;
   --color-charcoal: #2c0101c0;
   --color-muted: #382e2e;
-  --color-midnight: #1A1A3E;
+  --color-midnight: #1a1a3eee;
   --color-bottle-green: #183b03;
   --color-light-pink: #d35c7e;
+  --color-text: #1A1A3E;
 
   --font-script: 'Dancing Script', cursive;
   --font-comic: 'Comic Neue', 'Comiccrazy', cursive, sans-serif;
@@ -39,6 +40,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--color-midnight);
 }
 
 html {
@@ -52,6 +54,11 @@ body {
   font-family: var(--font-body);
   line-height: 1.65;
   overflow-x: hidden;
+}
+
+/* Text color: Ensure all text defaults to midnight blue */
+p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
+  color: var(--color-midnight);
 }
 
 ::selection {
@@ -191,7 +198,7 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: var(--color-charcoal);
+  color: var(--color-midnight);
   font-size: 0.95rem;
   font-weight: 600;
   transition: color 0.2s ease;
@@ -273,7 +280,7 @@ body {
 
 .mobile-nav-links a {
   text-decoration: none;
-  color: var(--color-charcoal);
+  color: var(--color-midnight);
   font-size: 1.05rem;
   font-weight: 600;
   padding: 8px 0;
@@ -358,22 +365,24 @@ body {
 .section-what-is::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-image: url('../images/watermark.jpeg');
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  opacity: 0.25;
+  background-size: contain;
+  opacity: 0.15;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
+  width: 50%;
+  height: 280px;
+  max-width: 350px;
 }
 
 .section-what-is .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 800px;
 }
 
@@ -711,6 +720,7 @@ body {
   justify-content: center;
   gap: 16px;
   text-align: left;
+  color: var(--color-midnight);
 }
 
 .user-avatar {
@@ -769,7 +779,7 @@ body {
   font-family: var(--font-heading);
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--color-purple);
+  color: var(--color-midnight);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
