@@ -1067,7 +1067,20 @@ footer {
   }
 
   .nav-right-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .nav-right-actions .social-pill {
     display: none;
+  }
+
+  .nav-right-actions .btn {
+    font-size: 0.72rem;
+    padding: 8px 14px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
   }
 
   .hamburger {
