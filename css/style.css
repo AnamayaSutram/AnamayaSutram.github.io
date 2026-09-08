@@ -288,68 +288,166 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid rgba(184, 142, 75, 0.1);
 }
 
-/* Hero Section (Matching Screenshots 2 & 3) */
+/* Hero Section (New Design with Personal Imagery) */
 .hero-wrapper {
   position: relative;
   width: 100%;
-  min-height: 82vh;
-  background: url('../images/hero_meditation_.jpg') center center / cover no-repeat;
+  min-height: 100vh;
+  background: url('../images/hero.jpeg') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: 80px 24px;
 }
 
 @media (max-width: 768px) {
   .hero-wrapper {
-    background-position: right center;
+    min-height: 90vh;
+    background: url('../images/hero-mobile.jpeg') center center / cover no-repeat;
+    padding: 60px 24px;
   }
-}
-
-/* Upper Left Corner Logo Overlay (Matching Screenshots 2 & 3) */
-.hero-logo-overlay {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 160px;
-  height: auto;
-  z-index: 20;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 8px 12px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .hero-overlay-content {
   position: relative;
   z-index: 10;
-  max-width: 860px;
+  max-width: 500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  text-align: left;
 }
 
-.hero-script-headline {
-  font-family: var(--font-script);
-  font-size: 4.2rem;
-  font-weight: 700;
-  color: var(--color-bottle-green);
+.hero-headline {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--color-midnight);
   line-height: 1.15;
-  margin-bottom: 18px;
-  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+  margin-bottom: 24px;
+  text-align: left;
 }
 
-.hero-comic-subtitle {
-  font-family: var(--font-comic);
+.hero-headline br:first-child + br {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero-headline {
+    font-size: 2.2rem;
+  }
+}
+
+.hero-subheading {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-midnight);
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.btn-health-enquiry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  text-decoration: none;
   text-transform: uppercase;
-  color: var(--color-bottle-green);
-  margin-bottom: 32px;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background-color: var(--color-purple);
+  color: #ffffff;
+  border: 2px solid var(--color-purple);
+  width: 100%;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.btn-health-enquiry:hover {
+  background-color: var(--color-purple-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-supporting-text {
+  font-size: 0.85rem;
+  color: var(--color-midnight);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.hero-secondary-link {
+  font-size: 1rem;
+  color: var(--color-purple);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  margin-bottom: 48px;
+  transition: all 0.2s ease;
+}
+
+.hero-secondary-link:hover {
+  color: var(--color-purple-hover);
+}
+
+/* Core Pillars Section */
+.hero-pillars {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .hero-pillars {
+    gap: 16px;
+    margin-top: 32px;
+  }
+}
+
+.pillar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  position: relative;
+  padding: 0 12px;
+}
+
+.pillar-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60px;
+  background-color: rgba(216, 141, 21, 0.753);
+}
+
+.pillar-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.pillar-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-midnight);
 }
 
 /* What is Anamaya Sutram Section */
