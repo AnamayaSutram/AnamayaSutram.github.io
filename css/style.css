@@ -303,7 +303,8 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .hero-wrapper {
     min-height: 90vh;
-    background: url('../images/hero-mobile.jpeg') center center / cover no-repeat;
+    background: rgba(250, 246, 241, 0.93) url('../images/hero-mobile.jpeg') center top / cover no-repeat;
+    background-blend-mode: overlay;
     padding: 60px 24px;
   }
 }
@@ -1048,37 +1049,106 @@ footer {
 .geometry-quote {
     font-size: 1.5rem;
 }
-/* Mobile Responsiveness (Matching Screenshot 3) */
+/* =============================================
+   Mobile Responsiveness
+   ============================================= */
 @media (max-width: 768px) {
   .container {
     padding: 0 16px;
   }
 
-  .hero-script-headline {
-    font-size: 2.5rem;
-  }
-
-  .hero-comic-subtitle {
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-  }
-
-  .hero-logo-overlay {
-    top: 10px;
-    left: 10px;
-    width: 120px;
-  }
-
-  .gold-section-title {
-    font-size: 2.2rem;
+  /* --- Navbar --- */
+  .navbar {
+    padding: 12px 0;
   }
 
   .nav-links {
     display: none;
   }
 
+  .nav-right-actions {
+    display: none;
+  }
+
   .hamburger {
     display: block;
+  }
+
+  .nav-brand-title {
+    font-size: 1.4rem;
+  }
+
+  .nav-brand-tagline {
+    font-size: 0.62rem;
+    letter-spacing: 2px;
+  }
+
+  /* --- Hero --- */
+  .hero-wrapper {
+    min-height: 100svh;
+    padding: 40px 20px 32px;
+    align-items: flex-end;
+    background-position: center top;
+  }
+
+  .hero-overlay-content {
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .hero-headline {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .hero-subheading {
+    font-size: 0.92rem;
+    margin-bottom: 24px;
+  }
+
+  .btn-health-enquiry {
+    font-size: 0.88rem;
+    padding: 14px 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-supporting-text {
+    font-size: 0.8rem;
+  }
+
+  .hero-secondary-link {
+    font-size: 0.92rem;
+    margin-bottom: 32px;
+  }
+
+  .hero-pillars {
+    gap: 0;
+    margin-top: 24px;
+    padding-top: 16px;
+  }
+
+  .pillar-item {
+    padding: 0 6px;
+  }
+
+  .pillar-icon {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+  }
+
+  .pillar-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.5px;
+  }
+
+  /* --- Sections --- */
+  .gold-section-title {
+    font-size: 2rem;
+  }
+
+  .section-padding {
+    padding: 40px 0;
   }
 
   .batch-grid {
@@ -1089,8 +1159,42 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .nav-right-actions .social-pill {
-    display: inline-flex;
+  /* --- What is section --- */
+  .geometry-quote {
+    font-size: 1.2rem;
+  }
+
+  /* --- Programs grid --- */
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* --- Testimonial card --- */
+  .testimonial-card {
+    padding: 28px 20px;
+  }
+
+  /* --- Accordion --- */
+  .accordion-header {
+    font-size: 1.1rem;
+    padding: 18px 20px;
+  }
+
+  .accordion-body {
+    padding: 0 20px 20px;
+  }
+
+  /* --- Batch container --- */
+  .batch-container {
+    padding: 28px 20px;
+  }
+
+  /* --- Footer --- */
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
   }
 }
 
