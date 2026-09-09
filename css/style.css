@@ -1285,11 +1285,21 @@ footer {
   display: block;
 }
 
+.carousel-slide a {
+  display: block;
+  text-decoration: none;
+}
+
 .carousel-slide img {
   width: 100%;
   height: auto;
   border-radius: 12px;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.carousel-slide a:hover img {
+  transform: scale(1.02);
 }
 
 .carousel-btn {
@@ -1416,6 +1426,12 @@ footer {
   font-size: 0.95rem;
   color: var(--color-midnight);
   font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.library-text:hover {
+  color: var(--color-gold);
 }
 
 .library-actions {
