@@ -75,7 +75,7 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
 }
 
 .section-padding {
-  padding: 60px 0;
+  padding: 10px 0;
 }
 
 .text-center {
@@ -292,20 +292,21 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
 .hero-wrapper {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  background: url('../images/hero.jpeg') center center / cover no-repeat;
+  min-height: unset;
+  background: rgba(250, 246, 241, 0.4) url('../images/hero.png') center top / cover no-repeat;
+  background-blend-mode: overlay;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 48px 24px 48px;
 }
 
 @media (max-width: 768px) {
   .hero-wrapper {
-    min-height: 90vh;
-    background: rgba(250, 246, 241, 0.93) url('../images/hero-mobile.jpeg') center top / cover no-repeat;
+    min-height: unset;
+    background: rgba(250, 246, 241, 0.4) url('../images/hero-mobile.jpeg') center top / cover no-repeat;
     background-blend-mode: overlay;
-    padding: 60px 24px;
+    padding: 32px 20px 32px;
   }
 }
 
@@ -326,7 +327,7 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: var(--color-midnight);
   line-height: 1.15;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   text-align: left;
 }
 
@@ -412,8 +413,8 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .hero-pillars {
-    gap: 16px;
-    margin-top: 32px;
+    gap: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -613,7 +614,7 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
 .program-card {
   background: #ffffff;
   border-radius: 24px;
-  padding: 40px 32px;
+  padding: 30px 32px;
   border: 1.5px solid rgba(184, 142, 75, 0.2);
   box-shadow: var(--shadow-sm);
   display: flex;
@@ -1098,9 +1099,9 @@ footer {
 
   /* --- Hero --- */
   .hero-wrapper {
-    min-height: 100svh;
-    padding: 40px 20px 32px;
-    align-items: flex-end;
+    min-height: unset;
+    padding: 32px 20px 32px;
+    align-items: flex-start;
     background-position: center top;
   }
 
@@ -1137,8 +1138,8 @@ footer {
 
   .hero-pillars {
     gap: 0;
-    margin-top: 24px;
-    padding-top: 16px;
+    margin-top: 5px;
+    padding-top: 5px;
   }
 
   .pillar-item {
@@ -1161,7 +1162,7 @@ footer {
   }
 
   .section-padding {
-    padding: 40px 0;
+    padding: 10px 0;
   }
 
   .batch-grid {
