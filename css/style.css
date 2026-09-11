@@ -15,7 +15,7 @@
   --color-card: #FFFFFF;
   --color-charcoal: #2c0101c0;
   --color-muted: #382e2e;
-  --color-midnight: #1a1a3eee;
+  --color-midnight: #191970;
   --color-bottle-green: #183b03;
   --color-light-pink: #d35c7e;
   --color-text: #1A1A3E;
@@ -293,12 +293,12 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
   min-height: unset;
-  background: rgba(250, 246, 241, 0.4) url('../images/hero.png') center top / cover no-repeat;
+  background: rgba(250, 246, 241, 0.4) url('../images/hero.png') right center / cover no-repeat;
   background-blend-mode: overlay;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 48px 24px 48px;
+  padding: 60px 0 60px 80px;
 }
 
 @media (max-width: 768px) {
@@ -313,8 +313,8 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
 .hero-overlay-content {
   position: relative;
   z-index: 10;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 550px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -322,69 +322,92 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-headline {
-  font-family: var(--font-heading);
-  font-size: 3.5rem;
-  font-weight: 600;
+  font-family: var(--font-midnight);
+  font-size: 2rem;
+  font-weight: 500;
   color: var(--color-midnight);
-  line-height: 1.15;
-  /* margin-bottom: 24px; */
+  line-height: 1.1;
+  margin-bottom: 20px;
   text-align: left;
+  letter-spacing: -0.5px;
 }
 
-.hero-headline br:first-child + br {
-  display: none;
-}
 
 @media (max-width: 768px) {
   .hero-headline {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+.hero-quote {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--color-midnight);
+  margin-bottom: 24px;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero-quote {
+    font-size: 1rem;
+    margin-bottom: 16px;
   }
 }
 
 .hero-subheading {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.75;
   color: var(--color-midnight);
   margin-bottom: 32px;
   text-align: left;
+  letter-spacing: 0.3px;
 }
 
 .btn-health-enquiry {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
-  border-radius: 8px;
+  padding: 8px 16px;
+  border-radius: 12px;
   font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   cursor: pointer;
   transition: all 0.25s ease;
-  background-color: var(--color-purple);
+  background-color: var(--color-gold);
   color: #ffffff;
-  border: 2px solid var(--color-purple);
-  width: 100%;
-  margin-bottom: 16px;
+  border: 2px solid var(--color-gold);
+  width: fit-content;
+  margin-bottom: 20px;
   gap: 8px;
 }
 
 .btn-health-enquiry:hover {
-  background-color: var(--color-purple-hover);
+  background-color: var(--color-gold-bright);
+  border-color: var(--color-gold-bright);
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
 }
 
 .hero-supporting-text {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--color-midnight);
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
+
 
 .hero-secondary-link {
   font-size: 1rem;
@@ -1112,7 +1135,7 @@ footer {
   }
 
   .hero-headline {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 16px;
   }
 
@@ -1122,8 +1145,8 @@ footer {
   }
 
   .btn-health-enquiry {
-    font-size: 0.88rem;
-    padding: 14px 20px;
+    font-size: 0.55rem;
+    padding: 10px 20px;
     letter-spacing: 0.5px;
   }
 
