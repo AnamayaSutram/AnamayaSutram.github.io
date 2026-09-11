@@ -5,8 +5,9 @@
   --color-burgundy: #7B1418;
   --color-gold: #B88E4B;
   --color-gold-bright: #D4AF6D;
-  --color-purple: #c9a7e7;
-  --color-purple-hover: #412856;
+  --color-purple: #62008b; 
+  /* Purple is the name but the colour used is dark violet */
+  --color-purple-hover: #68408a;
   --color-indigo: #201D48;
   --color-green: #3D6843;
   --color-ivory: #FAF6F1;
