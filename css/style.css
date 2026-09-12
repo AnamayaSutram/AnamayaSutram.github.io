@@ -134,6 +134,7 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   color: var(--color-gold);
   border: 2px solid var(--color-gold);
+  text-transform: none;
 }
 
 .btn-gold-outline:hover {
