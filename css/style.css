@@ -1096,28 +1096,36 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
 
 /* FAQ Accordion */
 .accordion {
-  max-width: 860px;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    max-width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .accordion-item {
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: 12px;
   border: 1.5px solid rgba(184, 142, 75, 0.2);
   overflow: hidden;
 }
 
 .accordion-header {
   width: 100%;
-  padding: 22px 28px;
+  padding: 16px 20px;
   text-align: left;
   background: none;
   border: none;
   font-family: var(--font-heading);
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--color-midnight);
   cursor: pointer;
@@ -1127,8 +1135,8 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
 }
 
 .accordion-body {
-  padding: 0 28px 24px 28px;
-  font-size: 0.98rem;
+  padding: 0 20px 16px 20px;
+  font-size: 0.95rem;
   color: var(--color-midnight);
   display: none;
   line-height: 1.65;
