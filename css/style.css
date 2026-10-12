@@ -647,11 +647,11 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
   margin-right: auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .programs-grid-two {
     grid-template-columns: 1fr;
     gap: 16px;
-    margin-top: 20px;
+    margin-top: 16px;
   }
 }
 
@@ -691,6 +691,19 @@ p, li, span, a, div, h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   line-height: 1.4;
   font-weight: 400;
+}
+
+.program-featured-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-purple);
+  background: rgba(83, 55, 107, 0.08);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 6px;
 }
 
 .program-featured-subtitle {
